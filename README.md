@@ -34,9 +34,6 @@ This would be the best option memory wise since it does not involve maintaining 
 
 At a cost of a greater programmational effort, the benefits would be remarkable.
 
-##### Network 
-An obvious requirement was to be server friendly and avoid overloading the server with requests.  The given rate limit (100 requests/second) led to the use of an algorithm which would stop the processes in case the max rate was reached. After a quick search in Google, the Token Bucket seemed the best fit for our needs.
-
 ##### Statistics
 The script takes about 2 hours to complete its task at a rate of 100 requests per second when using 32 worker processes. Better rate limiting strategies may improve this.
 
@@ -77,4 +74,5 @@ ENV=production python main.py
 #### Author and copyright
 
 Licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+
 Luis Carlos Mateos Cañas. 2015

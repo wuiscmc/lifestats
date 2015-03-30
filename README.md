@@ -61,8 +61,14 @@ python main.py
 
 ###### Test
 This project uses [Nose](https://nose.readthedocs.org/en/latest/).
+
+To run the unit tests:
 ```sh 
-ENV=test nosetests
+ENV=test nosetests tests/test_worker.py
+```
+or the integration tests
+```sh 
+ENV=test nosetests tests/test_integration.py
 ```
 
 ###### Production 

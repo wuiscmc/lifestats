@@ -1,0 +1,24 @@
+default: &default
+  url: 'http://localhost:4567/foodstats'
+  rate_limit: 100
+  pool: 1
+  log_span: 1
+  first_id: 658330693
+  last_id: 658332803
+  results_per_page: 100
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  rate_limit: 10
+  pool: 2
+
+production:
+  <<: *default
+  log_span: 10
+  rate_limit: 100
+  pool: 32
+  url: 'https://api.lifesum.com/v1/foodipedia/foodstats/'
+  last_id: 732158492

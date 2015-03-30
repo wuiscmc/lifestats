@@ -1,0 +1,30 @@
+{
+    "meta": {
+        "code": 200,
+        "limit": 4,
+        "next_offset": null,
+        "offset": 658332699
+    },
+    "response": [
+        {
+            "food__category_id": 1,
+            "food_id": 1,
+            "id": 658332699
+        },
+        {
+            "food__category_id": 1,
+            "food_id": 1,
+            "id": 658332700
+        },
+        {
+            "food__category_id": 1,
+            "food_id": 2,
+            "id": 658332701
+        },
+        {
+            "food__category_id": 2,
+            "food_id": 3,
+            "id": 658332702
+        }
+    ]
+}

@@ -10,7 +10,7 @@ except ImportError:
     'author_email': 'wuiscmc@gmail.com',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['stats'],
+    'packages': ['lifestats'],
     'scripts': [],
     'name': 'lifestats'
   }
